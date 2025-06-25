@@ -191,13 +191,19 @@ def inventory_tools(query: str) -> List[Dict]:
     if any(word in query_lower for word in ['red', 'blue', 'black', 'white', 'silver']):
         for color in ['red', 'blue', 'black', 'white', 'silver']:
             if color in query_lower:
-                filters.append(cached_df['color'].str.lower() == color)
+                filters.append(cached_df['colors_available'].apply(lambda x: color in [c.lower() for c in x]))
 
-    if any(word in query_lower for word in ['automatic', 'manual']):
-        if 'automatic' in query_lower:
-            filters.append(cached_df['transmission'].str.lower() == 'automatic')
-        if 'manual' in query_lower:
-            filters.append(cached_df['transmission'].str.lower() == 'manual')
+    # Price/budget (e.g., "under $30000", "below 25000", "max 40000")
+    price_match = re.search(r'(under|below|max)\s*\$?(\d{4,6})', query_lower)
+    if price_match:
+        max_price = int(price_match.group(2))
+        filters.append(cached_df['price'] <= max_price)
+    else:
+        price_match = re.search(r'\$?(\d{4,6})\s*(or less|or below|and below|and less)', query_lower)
+        if price_match:
+            max_price = int(price_match.group(1))
+            filters.append(cached_df['price'] <= max_price)
+
 
     # Year extraction (e.g., "2020 model")
     year_matches = re.findall(r'\b(20[0-4][0-9]|19[8-9][0-9])\b', query_lower)
@@ -211,14 +217,30 @@ def inventory_tools(query: str) -> List[Dict]:
             if str(val).lower() in query_lower:
                 filters.append(cached_df[col].str.lower() == str(val).lower())
 
-    # Mileage (e.g., "under 50000 miles")
-    mileage_match = re.search(r'under\s+(\d{2,6})\s*miles', query_lower)
-    if mileage_match:
-        max_mileage = int(mileage_match.group(1))
-        filters.append(cached_df['mileage'] <= max_mileage)
-
     # Only show in-stock vehicles
     filters.append(cached_df['availability'] == 'in_stock')
+
+    # Fuel type
+    for fuel in ['electric', 'hybrid', 'gasoline', 'plug-in hybrid']:
+        if fuel in query_lower:
+            filters.append(cached_df['fuel_type'].str.lower() == fuel)
+
+    # Drivetrain
+    for drive in ['awd', 'fwd', 'rwd', '4wd']:
+        if drive in query_lower:
+            filters.append(cached_df['drivetrain'].str.lower() == drive)
+
+    # Seating capacity (e.g., "7-seater", "5 seats")
+    seat_match = re.search(r'(\d{1,2})\s*[- ]?(seater|seats|seat)', query_lower)
+    if seat_match:
+        seats = int(seat_match.group(1))
+        filters.append(cached_df['seating_capacity'] == seats)
+
+    # Safety rating (e.g., "5-star safety rating")
+    safety_match = re.search(r'(\d)\s*[- ]?star', query_lower)
+    if safety_match:
+        rating = int(safety_match.group(1))
+        filters.append(cached_df['safety_rating'] == rating)
 
     if filters:
         mask = reduce(operator.and_, filters)

@@ -145,6 +145,7 @@ inventory_specialist = Agent(
     name="Inventory Specialist",
     instructions=f"""
         You are an inventory specialist with comprehensive knowledge of the entire vehicle inventory.
+        Always use the inventory_tools to answer questions about the inventory.
         You can answer questions about:
         - The total number of vehicles in stock
         - Available makes, models, years, and categories

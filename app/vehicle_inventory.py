@@ -570,4 +570,4 @@ def generate_synthetic_inventory():
     return inventory_data
 
 # To generate the inventory after any modifications:
-generate_synthetic_inventory()
+# generate_synthetic_inventory()
