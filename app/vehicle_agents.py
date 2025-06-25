@@ -1,12 +1,13 @@
 from agents import Agent
-from tools import search_vehicles_by_budget, search_vehicles_by_type, search_vehicles_by_features, search_vehicles_by_fuel_type, optimized_multi_agent_query
+from tools import search_vehicles_by_budget, search_vehicles_by_type, search_vehicles_by_features, search_vehicles_by_fuel_type, optimized_multi_agent_query, inventory_tools
 
 vehicle_tools = [
     search_vehicles_by_budget,
     search_vehicles_by_type,
     search_vehicles_by_features,
     search_vehicles_by_fuel_type,
-    optimized_multi_agent_query
+    optimized_multi_agent_query,
+    inventory_tools
 ]
 
 budget_specialist = Agent(
@@ -140,6 +141,29 @@ luxury_specialist = Agent(
     model="gpt-4o-mini"
 )
 
+inventory_specialist = Agent(
+    name="Inventory Specialist",
+    instructions=f"""
+        You are an inventory specialist with comprehensive knowledge of the entire vehicle inventory.
+        You can answer questions about:
+        - The total number of vehicles in stock
+        - Available makes, models, years, and categories
+        - Stock counts for specific vehicles
+        - Which vehicles are available in a certain color, drivetrain, or feature
+        - Any inventory-wide statistics or summaries
+        - You do NOT recommend vehicles for purchase, but provide factual inventory information.
+        - If asked about inventory details, always use the inventory_tools to answer.
+
+        Communication Style:
+        - Factual and concise
+        - Provide clear, direct answers
+        - Use numbers and lists where appropriate
+        - Do not speculate or recommend
+    """,
+    tools=vehicle_tools,
+    model="gpt-4o-mini"
+)
+
 
 ##* Converting Specialist Agents into callable tools
 
@@ -163,6 +187,10 @@ eco_tool = eco_specialist.as_tool(
     tool_description="Get eco-friendly and fuel-efficient vehicle\nrecommendations"
 )
 
+inventory_tool = inventory_specialist.as_tool(
+    tool_name="inventory_specialist",
+    tool_description="Get detailed information about the entire vehicle inventory, such as stock counts, available makes/models, and inventory-wide stats."
+)
 
 vehicle_recommendation_agent = Agent(
     name="Vehicle Recommendation Manager",
@@ -173,10 +201,12 @@ vehicle_recommendation_agent = Agent(
         MAKE SURE NOT TO suggest any vehicles that are not in the inventory.
         Do not ask clarifying questions.
 
-        You have access to a tool called `optimized_multi_agent_query`.  
-        Use this tool whenever a user query could benefit from the expertise of multiple specialists (such as budget, family, luxury, or eco requirements), 
-        or when you are unsure which specialist is most relevant.  
+        You have access to a tool called `optimized_multi_agent_query`.
+        Use this tool whenever a user query could benefit from the expertise of multiple specialists (such as budget, family, luxury, or eco requirements),
+        or when you are unsure which specialist is most relevant.
         This tool will analyze the query and automatically coordinate the appropriate specialist agents in parallel, returning a synthesized result.
+
+        You also have access to an `inventory_specialist` tool. Use this tool whenever a user asks about inventory details, such as stock counts, available makes/models, or inventory-wide statistics.
 
         Decision-Making Process:
             1. Analyze customer query for intent, budget, and priorities
@@ -189,6 +219,7 @@ vehicle_recommendation_agent = Agent(
         - Family/safety priorities Use family_specialist
         - Luxury/performance/technology interest Use luxury_specialist
         - Environmental/efficiency focus Use eco_specialist
+        - Inventory/statistics queries Use inventory_specialist
         - Complex queries Combine multiple specialists
 
         Quality Standards:
@@ -203,7 +234,7 @@ vehicle_recommendation_agent = Agent(
         - Combine specialist insights intelligently
         - Adapt communication style to customer sophistication
     """,
-    tools=vehicle_tools + [budget_tool , family_tool , luxury_tool , eco_tool],
+    tools=vehicle_tools + [budget_tool, family_tool, luxury_tool, eco_tool, inventory_tool],
     model="gpt-4o-mini"
 )
 

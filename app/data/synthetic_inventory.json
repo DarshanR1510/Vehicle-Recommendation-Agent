@@ -190,5 +190,556 @@
     "stock_count": 15,
     "category": "budget",
     "description": "Cost-conscious budget sedan offering great value, fuel efficiency, and a solid warranty."
+  },
+  {
+    "id": "V007",
+    "make": "Kia",
+    "model": "Soul",
+    "year": 2024,
+    "type": "Budget Hatchback",
+    "price": 19500,
+    "mpg_city": 29,
+    "mpg_highway": 35,
+    "seating_capacity": 5,
+    "safety_rating": 4,
+    "drivetrain": "FWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Bluetooth",
+      "Backup Camera",
+      "Apple CarPlay",
+      "Lane Keep Assist"
+    ],
+    "colors_available": [
+      "Red",
+      "White",
+      "Gray"
+    ],
+    "availability": "in_stock",
+    "stock_count": 10,
+    "category": "budget",
+    "description": "Affordable hatchback with modern tech and great warranty."
+  },
+  {
+    "id": "V008",
+    "make": "Chevrolet",
+    "model": "Bolt EV",
+    "year": 2024,
+    "type": "Electric Hatchback",
+    "price": 27000,
+    "mpg_city": 131,
+    "mpg_highway": 109,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Electric",
+    "features": [
+      "Fast Charging",
+      "Touchscreen",
+      "Heated Seats",
+      "Lane Keep Assist"
+    ],
+    "colors_available": [
+      "Blue",
+      "White",
+      "Black"
+    ],
+    "availability": "in_stock",
+    "stock_count": 6,
+    "category": "eco",
+    "description": "Affordable EV with great range and tech features."
+  },
+  {
+    "id": "V009",
+    "make": "Subaru",
+    "model": "Outback",
+    "year": 2024,
+    "type": "Family Wagon",
+    "price": 34000,
+    "mpg_city": 26,
+    "mpg_highway": 33,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "AWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "All-Wheel Drive",
+      "EyeSight Safety",
+      "Roof Rails",
+      "Touchscreen"
+    ],
+    "colors_available": [
+      "Green",
+      "Silver",
+      "White"
+    ],
+    "availability": "in_stock",
+    "stock_count": 7,
+    "category": "family",
+    "description": "Versatile family wagon with AWD and advanced safety."
+  },
+  {
+    "id": "V010",
+    "make": "Mercedes-Benz",
+    "model": "E-Class",
+    "year": 2024,
+    "type": "Luxury Sedan",
+    "price": 57000,
+    "mpg_city": 23,
+    "mpg_highway": 31,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "RWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Leather",
+      "Ambient Lighting",
+      "Burmester Audio",
+      "Driver Assist"
+    ],
+    "colors_available": [
+      "Black",
+      "Silver",
+      "White"
+    ],
+    "availability": "in_stock",
+    "stock_count": 4,
+    "category": "luxury",
+    "description": "Executive sedan with luxury features and advanced tech."
+  },
+  {
+    "id": "V011",
+    "make": "Toyota",
+    "model": "Sienna",
+    "year": 2024,
+    "type": "Family Minivan",
+    "price": 39000,
+    "mpg_city": 36,
+    "mpg_highway": 36,
+    "seating_capacity": 7,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Hybrid",
+    "features": [
+      "Power Sliding Doors",
+      "Rear Entertainment",
+      "Blind Spot Monitor",
+      "Apple CarPlay"
+    ],
+    "colors_available": [
+      "White",
+      "Gray",
+      "Blue"
+    ],
+    "availability": "in_stock",
+    "stock_count": 8,
+    "category": "family",
+    "description": "Hybrid minivan with space, safety, and efficiency."
+  },
+  {
+    "id": "V012",
+    "make": "Mazda",
+    "model": "CX-5",
+    "year": 2024,
+    "type": "Family SUV",
+    "price": 31000,
+    "mpg_city": 25,
+    "mpg_highway": 31,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "AWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Blind Spot Monitor",
+      "Heated Seats",
+      "Apple CarPlay",
+      "Rear Cross Traffic Alert"
+    ],
+    "colors_available": [
+      "Red",
+      "White",
+      "Black"
+    ],
+    "availability": "in_stock",
+    "stock_count": 9,
+    "category": "family",
+    "description": "Stylish family SUV with premium features and safety."
+  },
+  {
+    "id": "V013",
+    "make": "Hyundai",
+    "model": "Ioniq 5",
+    "year": 2024,
+    "type": "Electric Crossover",
+    "price": 42000,
+    "mpg_city": 132,
+    "mpg_highway": 98,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "RWD",
+    "fuel_type": "Electric",
+    "features": [
+      "Ultra-fast Charging",
+      "Augmented Reality HUD",
+      "Heated Seats",
+      "Wireless Charging"
+    ],
+    "colors_available": [
+      "Silver",
+      "Blue",
+      "White"
+    ],
+    "availability": "in_stock",
+    "stock_count": 6,
+    "category": "eco",
+    "description": "Cutting-edge electric crossover with futuristic design."
+  },
+  {
+    "id": "V014",
+    "make": "Volkswagen",
+    "model": "ID.4",
+    "year": 2024,
+    "type": "Electric SUV",
+    "price": 39000,
+    "mpg_city": 104,
+    "mpg_highway": 89,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "RWD",
+    "fuel_type": "Electric",
+    "features": [
+      "Wireless App Connect",
+      "Heated Steering Wheel",
+      "Panoramic Roof",
+      "Adaptive Cruise"
+    ],
+    "colors_available": [
+      "Blue",
+      "White",
+      "Gray"
+    ],
+    "availability": "in_stock",
+    "stock_count": 7,
+    "category": "eco",
+    "description": "Spacious electric SUV with German engineering."
+  },
+  {
+    "id": "V015",
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2024,
+    "type": "Budget Sedan",
+    "price": 23000,
+    "mpg_city": 31,
+    "mpg_highway": 40,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Honda Sensing",
+      "Apple CarPlay",
+      "Backup Camera",
+      "Lane Keep Assist"
+    ],
+    "colors_available": [
+      "White",
+      "Black",
+      "Blue"
+    ],
+    "availability": "in_stock",
+    "stock_count": 12,
+    "category": "budget",
+    "description": "Reliable, efficient sedan with advanced safety tech."
+  },
+  {
+    "id": "V016",
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": 2024,
+    "type": "Electric Hatchback",
+    "price": 29000,
+    "mpg_city": 123,
+    "mpg_highway": 99,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Electric",
+    "features": [
+      "ProPILOT Assist",
+      "Heated Seats",
+      "Apple CarPlay",
+      "Automatic Emergency Braking"
+    ],
+    "colors_available": [
+      "White",
+      "Silver",
+      "Black"
+    ],
+    "availability": "in_stock",
+    "stock_count": 8,
+    "category": "eco",
+    "description": "Affordable electric hatchback with proven reliability."
+  },
+  {
+    "id": "V017",
+    "make": "Volvo",
+    "model": "XC90",
+    "year": 2024,
+    "type": "Luxury SUV",
+    "price": 61000,
+    "mpg_city": 21,
+    "mpg_highway": 30,
+    "seating_capacity": 7,
+    "safety_rating": 5,
+    "drivetrain": "AWD",
+    "fuel_type": "Hybrid",
+    "features": [
+      "Pilot Assist",
+      "Panoramic Sunroof",
+      "Bowers & Wilkins Audio",
+      "Third Row Seating"
+    ],
+    "colors_available": [
+      "White",
+      "Black",
+      "Gray"
+    ],
+    "availability": "in_stock",
+    "stock_count": 3,
+    "category": "luxury",
+    "description": "Premium 7-seater SUV with hybrid power and luxury."
+  },
+  {
+    "id": "V018",
+    "make": "Ford",
+    "model": "Escape Hybrid",
+    "year": 2024,
+    "type": "Eco SUV",
+    "price": 32000,
+    "mpg_city": 44,
+    "mpg_highway": 37,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Hybrid",
+    "features": [
+      "SYNC 3",
+      "Rear Camera",
+      "Blind Spot Info",
+      "Remote Start"
+    ],
+    "colors_available": [
+      "Blue",
+      "White",
+      "Red"
+    ],
+    "availability": "in_stock",
+    "stock_count": 7,
+    "category": "eco",
+    "description": "Efficient hybrid SUV with modern tech and comfort."
+  },
+  {
+    "id": "V019",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2024,
+    "type": "Budget Sedan",
+    "price": 21000,
+    "mpg_city": 30,
+    "mpg_highway": 38,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Toyota Safety Sense",
+      "Apple CarPlay",
+      "Backup Camera",
+      "Lane Departure Alert"
+    ],
+    "colors_available": [
+      "White",
+      "Black",
+      "Silver"
+    ],
+    "availability": "in_stock",
+    "stock_count": 14,
+    "category": "budget",
+    "description": "Best-selling compact sedan with legendary reliability."
+  },
+  {
+    "id": "V020",
+    "make": "Audi",
+    "model": "Q5",
+    "year": 2024,
+    "type": "Luxury SUV",
+    "price": 53000,
+    "mpg_city": 23,
+    "mpg_highway": 29,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "AWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Virtual Cockpit",
+      "Bang & Olufsen Audio",
+      "Panoramic Sunroof",
+      "Quattro AWD"
+    ],
+    "colors_available": [
+      "Black",
+      "White",
+      "Gray"
+    ],
+    "availability": "in_stock",
+    "stock_count": 4,
+    "category": "luxury",
+    "description": "Sophisticated luxury SUV with advanced tech and comfort."
+  },
+  {
+    "id": "V021",
+    "make": "Kia",
+    "model": "Niro Hybrid",
+    "year": 2024,
+    "type": "Eco Crossover",
+    "price": 27000,
+    "mpg_city": 53,
+    "mpg_highway": 54,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Hybrid",
+    "features": [
+      "Wireless Charging",
+      "Lane Keep Assist",
+      "Apple CarPlay",
+      "Rear Camera"
+    ],
+    "colors_available": [
+      "Blue",
+      "White",
+      "Gray"
+    ],
+    "availability": "in_stock",
+    "stock_count": 8,
+    "category": "eco",
+    "description": "Ultra-efficient hybrid crossover with modern features."
+  },
+  {
+    "id": "V022",
+    "make": "Chrysler",
+    "model": "Pacifica Hybrid",
+    "year": 2024,
+    "type": "Family Minivan",
+    "price": 42000,
+    "mpg_city": 82,
+    "mpg_highway": 30,
+    "seating_capacity": 7,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Hybrid",
+    "features": [
+      "Stow 'n Go Seats",
+      "Uconnect Theater",
+      "Blind Spot Monitor",
+      "Remote Start"
+    ],
+    "colors_available": [
+      "White",
+      "Silver",
+      "Red"
+    ],
+    "availability": "in_stock",
+    "stock_count": 5,
+    "category": "family",
+    "description": "Spacious hybrid minivan with family-friendly features."
+  },
+  {
+    "id": "V023",
+    "make": "Jeep",
+    "model": "Grand Cherokee 4xe",
+    "year": 2024,
+    "type": "Eco SUV",
+    "price": 60000,
+    "mpg_city": 56,
+    "mpg_highway": 57,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "4WD",
+    "fuel_type": "Plug-in Hybrid",
+    "features": [
+      "Plug-in Hybrid",
+      "Quadra-Trac 4WD",
+      "Uconnect",
+      "Adaptive Cruise"
+    ],
+    "colors_available": [
+      "Black",
+      "White",
+      "Gray"
+    ],
+    "availability": "in_stock",
+    "stock_count": 3,
+    "category": "eco",
+    "description": "Rugged plug-in hybrid SUV with off-road capability."
+  },
+  {
+    "id": "V024",
+    "make": "Chevrolet",
+    "model": "Traverse",
+    "year": 2024,
+    "type": "Family SUV",
+    "price": 37000,
+    "mpg_city": 18,
+    "mpg_highway": 27,
+    "seating_capacity": 7,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Third Row Seating",
+      "Rear Camera Mirror",
+      "Apple CarPlay",
+      "Lane Change Alert"
+    ],
+    "colors_available": [
+      "White",
+      "Black",
+      "Red"
+    ],
+    "availability": "in_stock",
+    "stock_count": 6,
+    "category": "family",
+    "description": "Spacious 3-row SUV for large families and road trips."
+  },
+  {
+    "id": "V025",
+    "make": "Lexus",
+    "model": "ES 300h",
+    "year": 2024,
+    "type": "Luxury Hybrid Sedan",
+    "price": 47000,
+    "mpg_city": 43,
+    "mpg_highway": 44,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Hybrid",
+    "features": [
+      "Mark Levinson Audio",
+      "Heated/Ventilated Seats",
+      "Blind Spot Monitor",
+      "Sunroof"
+    ],
+    "colors_available": [
+      "White",
+      "Black",
+      "Silver"
+    ],
+    "availability": "in_stock",
+    "stock_count": 4,
+    "category": "luxury",
+    "description": "Luxury hybrid sedan with comfort, tech, and efficiency."
   }
 ]
