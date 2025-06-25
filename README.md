@@ -24,13 +24,16 @@ cd vehicle-recommendation-agent
 ```
 
 ### 2. Install Requirements
+- make sure you have UV installed
+- Create an `.env` file with your API keys and configuration.
+- Make sure to add `OPENAI_API_KEY=your_openai_key` to your `.env` file.
 ```sh
-pip install -r requirements.txt
+    uv sync
 ```
 
 ### 3. Run the App
 ```sh
-python app/app.py
+uv run app/app.py
 ```
 
 The Gradio UI will open in your browser. Ask anything about vehicles!
@@ -48,7 +51,7 @@ app/
   ├── error_handling.py     # Robust error handling
   ├── data/                 # Data and config files
   └── ...
-requirements.txt
+pyproject.toml
 README.md
 ```
 
