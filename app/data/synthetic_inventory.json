@@ -1,0 +1,194 @@
+[
+  {
+    "id": "V001",
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2024,
+    "type": "Sedan",
+    "price": 28000,
+    "mpg_city": 28,
+    "mpg_highway": 39,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "FWD",
+    "fuel_type": "Hybrid",
+    "features": [
+      "Backup Camera",
+      "Bluetooth",
+      "Lane Assist",
+      "Adaptive Cruise Control",
+      "Automatic Emergency Braking"
+    ],
+    "colors_available": [
+      "White",
+      "Black",
+      "Silver",
+      "Red",
+      "Blue"
+    ],
+    "availability": "in_stock",
+    "stock_count": 12,
+    "category": "family",
+    "description": "Reliable family sedan with excellent fuel economy and safety features"
+  },
+  {
+    "id": "V002",
+    "make": "Honda",
+    "model": "CR-V",
+    "year": 2024,
+    "type": "Compact SUV",
+    "price": 32000,
+    "mpg_city": 27,
+    "mpg_highway": 33,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "AWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Backup Camera",
+      "Bluetooth",
+      "Adaptive Cruise Control",
+      "Blind Spot Monitor",
+      "Spacious Interior"
+    ],
+    "colors_available": [
+      "Silver",
+      "White",
+      "Gray",
+      "Blue",
+      "Black"
+    ],
+    "availability": "in_stock",
+    "stock_count": 8,
+    "category": "family",
+    "description": "Versatile compact SUV ideal for family transport, known for safety and versatility."
+  },
+  {
+    "id": "V003",
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": 2024,
+    "type": "Electric Sedan",
+    "price": 42000,
+    "mpg_city": 132,
+    "mpg_highway": 121,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "RWD",
+    "fuel_type": "Electric",
+    "features": [
+      "Autopilot",
+      "Touchscreen Display",
+      "Over-the-air Updates",
+      "Heated Seats",
+      "Premium Audio System"
+    ],
+    "colors_available": [
+      "White",
+      "Black",
+      "Red",
+      "Blue",
+      "Gray"
+    ],
+    "availability": "in_stock",
+    "stock_count": 7,
+    "category": "eco",
+    "description": "Tech-forward electric sedan offering Autopilot and strong sustainability credentials."
+  },
+  {
+    "id": "V004",
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2024,
+    "type": "Pickup Truck",
+    "price": 38000,
+    "mpg_city": 20,
+    "mpg_highway": 26,
+    "seating_capacity": 5,
+    "safety_rating": 4,
+    "drivetrain": "4WD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Towing Package",
+      "Large Bed",
+      "Trailer Assist",
+      "Off-road Capability",
+      "Sync 4 Infotainment"
+    ],
+    "colors_available": [
+      "White",
+      "Black",
+      "Red",
+      "Blue",
+      "Gray"
+    ],
+    "availability": "in_stock",
+    "stock_count": 9,
+    "category": "work",
+    "description": "Robust pickup truck known for work capability, towing prowess, and durability."
+  },
+  {
+    "id": "V005",
+    "make": "BMW",
+    "model": "X3",
+    "year": 2024,
+    "type": "Luxury SUV",
+    "price": 48000,
+    "mpg_city": 23,
+    "mpg_highway": 29,
+    "seating_capacity": 5,
+    "safety_rating": 5,
+    "drivetrain": "AWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Leather Seats",
+      "Panoramic Sunroof",
+      "Heads-up Display",
+      "Harman Kardon Sound",
+      "Parking Assistant Plus"
+    ],
+    "colors_available": [
+      "Black",
+      "White",
+      "Blue",
+      "Silver",
+      "Gray"
+    ],
+    "availability": "in_stock",
+    "stock_count": 5,
+    "category": "luxury",
+    "description": "Premium luxury SUV offering a refined driving experience and high-end features."
+  },
+  {
+    "id": "V006",
+    "make": "Hyundai",
+    "model": "Elantra",
+    "year": 2024,
+    "type": "Compact Sedan",
+    "price": 22000,
+    "mpg_city": 31,
+    "mpg_highway": 40,
+    "seating_capacity": 5,
+    "safety_rating": 4,
+    "drivetrain": "FWD",
+    "fuel_type": "Gasoline",
+    "features": [
+      "Touchscreen Display",
+      "Apple CarPlay",
+      "Android Auto",
+      "Lane Keeping Assist",
+      "Forward Collision Avoidance"
+    ],
+    "colors_available": [
+      "White",
+      "Black",
+      "Silver",
+      "Red",
+      "Blue"
+    ],
+    "availability": "in_stock",
+    "stock_count": 15,
+    "category": "budget",
+    "description": "Cost-conscious budget sedan offering great value, fuel efficiency, and a solid warranty."
+  }
+]
