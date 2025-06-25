@@ -23,10 +23,10 @@ git clone https://github.com/yourusername/vehicle-recommendation-agent.git
 cd vehicle-recommendation-agent
 ```
 
-### 2. Install Requirements
-- make sure you have UV installed
+- Make sure you have UV installed
 - Create an `.env` file with your API keys and configuration.
 - Make sure to add `OPENAI_API_KEY=your_openai_key` to your `.env` file.
+### 2. Sync Requirements
 ```sh
     uv sync
 ```
